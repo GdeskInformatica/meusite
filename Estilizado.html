@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Fomulário</title>
+	<style>
+		
+		#tudo {
+			width:70%;
+			margin:0 auto;
+			padding:30px;
+		}
+		
+		label, input { display: block; margin-top:10px; }
+		
+		body { background: linear-gradient(to bottom, #AAA, #FFF) repeat-x #FFF; }
+		
+		div#tudo { background: white; }
+		
+	</style>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+	<div id="tudo">
+		<h1 style="font-size:46px; color: red">ETEC Rodrigues de Abreu:</h1>
+		<p>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.</p>
+		<h2 style="font-style:italic; color: blue">Formulário de contato:</h2>
+		<form action="contatoenvia.php" method="post" name="formContato">
+			<label for="nome">Nome:</label>
+			<input type="text" class="form-control" id="nome" placeholder="Escreva seu nome" name="nome" required>
+			<label for="email">E-mail:</label>
+			<input type="email" class="form-control" id="email" placeholder="Escreva seu e-mail" name="email" required>
+			<label for="assunto">Assunto:</label>
+			<input type="text" class="form-control" id="assunto" placeholder="Escreva o assunto" name="assunto" required>
+			<label for="mensagem">Mensagem:</label>
+			<textarea class="form-control" id="mensagem" name="mensagem" required></textarea>
+			<input id="buttonContato" type="button" value="Enviar" />
+		</form>
+	</div>
+
+</body>
+</html>
